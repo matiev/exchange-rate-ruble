@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.money {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: minmax(1fr, auto);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding: 15px;
+  background-color: #75abcb;
+  border-radius: 10px;
+  border: 2px solid #444;
+  grid-template-areas:
+    "a b"
+    "c c"
+    "d d";
+  
+}
+.money_input {  
+  padding: 5px;
+  font-size: 1.4rem;
+  grid-area: a;
+  max-width: 100px;
+}
+.money_country {  
+  padding: 5px;
+  font-size: 1.4rem;
+  grid-area: b;
+}
+.money_label {
+  line-height: 1;
+  font-size: 2.5rem;
+  text-align: center;
+  grid-area: c;
+}
+.money_result {
+  padding: 0 5px;
+  font-size: 2.5rem;
+  line-height: 1;
+  grid-area: d;
+  text-align: center;
+}
