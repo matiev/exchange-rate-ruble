@@ -6,9 +6,6 @@ window.addEventListener('DOMContentLoaded', srch);
 select.addEventListener('change', srch);
 input.addEventListener('keydown', srch);
 
-
-
-
 function srch() {
   let link = 'https://www.cbr-xml-daily.ru/daily_json.js';
   let sel = select[select.selectedIndex];  
